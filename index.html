@@ -1,0 +1,112 @@
+<!DOCTYPE html ah mpshhh>
+<html lang="en">
+   <head>
+      <title>3rr0r_94_n0tF0und was here</title>
+   </head>
+   <body><body bgcolor="Black"> <center><br><img src="https://image.ibb.co/j2ezKF/logo_sora.png"height="490"</width="490"> <script> alert('Save Palestine ')</script> <script> alert('3rr0r_94_n0tF0und was here ')
+ </script> <body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;'><script type="text/javascript" language="javascript">$(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); </script><script>document.onkeydown = function(e) {if (e.ctrlKey &&(e.keyCode=== 85 )) {return false;}};</script><SCRIPT>
+TypingText = function(element, interval, cursor, finishedCallback) {
+  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    this.running = true;  
+    
+    return;
+  }
+  this.element = element;
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+  this.interval = (typeof interval == "undefined" ? 100 : interval);
+  this.origText = this.element.innerHTML;
+  this.unparsedOrigText = this.origText;
+  this.cursor = (cursor ? cursor : "");//restu ganteng
+  this.currentText = "";
+  this.currentChar = 0;
+  this.element.typingText = this;
+  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+  TypingText.all.push(this);
+  this.running = false;
+  this.inTag = false;
+  this.tagBuffer = "";
+  this.inHTMLEntity = false;
+  this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+  if(this.running) return;
+  if(typeof this.origText == "undefined") {//meki rusak
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);    
+    
+    return;//nih bcol
+  }
+  if(this.currentText == "") this.element.innerHTML = "";
+
+  if(this.currentChar < this.origText.length) {
+    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+      this.tagBuffer = "<";
+      this.inTag = true;//ngewe 
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+      this.tagBuffer += ">";//restutamvan
+      this.inTag = false;
+      this.currentText += this.tagBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inTag) {//Bufer kontol
+      this.tagBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+      this.HTMLEntityBuffer = "&";
+      this.inHTMLEntity = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+      this.HTMLEntityBuffer += ";";
+      this.inHTMLEntity = false;
+      this.currentText += this.HTMLEntityBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inHTMLEntity) {
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else {
+      this.currentText += this.origText.charAt(this.currentChar);
+    }
+    this.element.innerHTML = this.currentText;
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+    this.currentChar++;
+   setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+  } else {//Hacker tamavnz
+    this.currentText = "";
+    this.currentChar = 0;
+        this.running = false;
+        this.finishedCallback();//
+  }
+}// Tamvnz  3rror_94_n0tF0und
+</script>  
+<div id="example1">
+<pre id="example2"> <font color="red" face="courier" size="6" style="text-shadow: 0px 0px 10px;"> 
+<p align="center">Err0r_94_n0t_f0und A.K.A Mr.hk <br> <font color="white" face="courier" size="4" style="text-shadow: 0px 0px 10px;"> 
+   /ALL TEAM Sora Cyber Team    Indonesia Cyber War    Anonymous Indonesia
+ <br>~=|[-------------] MESSAGE FROM ME [-------------]|=~<font color="white"vsize="5"> <font color="#00FF00" face="courier" size="4" style="text-shadow: 0px 0px 10px;"> <br><center>Hello World <br>I will give you some special think about the Fucking IsraHell <br>See and watch what you do to Muslim People! <font color="black" face="courier" size="4" style="text-shadow: 0px 0px 10px;"> <br><font color="#FF0000">_[]|||||| I SEE YOU BROTHER||||||[]_<br></font> <font color="black" face="courier" size="5" style="text-shadow: 0px 0px 10px;"> <p align="left"><font color="red">contac me:<font color="white">hk</font> <br>contac we:<font color="white">Indonesia Cyber War/Anonymous Indonesia<br> 
+ <script type="text/javascript">
+
+new
+ TypingText(document.getElementById("example1"));
+new TypingText(document.getElementById("example2"), 100, function(){
+var ar = new Array(""); return "=" + ar[i.length %
+ar.length];});//jangan copy : v tapi di tulis aja hahaa
+TypingText.runAll();arafahlvr
+</script></html></body>
+   </body>
+</html>
